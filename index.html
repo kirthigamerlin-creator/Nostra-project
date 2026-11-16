@@ -8,17 +8,18 @@
     <!-- tailwind css CDN link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Header section -->
-    <div class="py-2 text-white text-center text-2xl" style="background-color: #1D232C;" id="newsHeader">
+    <div class="py-2 text-white text-center text-xs md:text-2xl" style="background-color: #1D232C;" id="newsHeader">
         Sign Up and <b>GET 20% OFF</b> for your first Order
         <i class="fa-solid fa-xmark pl-16 cursor-pointer" onclick="closeNewsHeader()"></i>
     </div>
 
     <!-- navbar section-->
-    <nav class="p-5 flex items-center justify-between sticky top-0 z-10 bg-white">
+    <nav class="p-3 md:p-5 flex items-center justify-between sticky top-0 z-10 bg-white">
         <h1 class="text-4xl font-bold">Nostra</h1>
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -26,7 +27,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
-        <ul class="justify-around gap-5 text-grey-300 hidden md:flex text-xl" style="width: 55%;">
+        <ul class="justify-around gap-5 text-grey-300 hidden md:flex text-lg md:text-sm lg:text-xl" style="width: 55%;">
             <li>
                 <a href="./" class="hover:underline hover:text-black" href="#">Home</a>
             </li>
@@ -73,146 +74,149 @@
     </section>
 
     <!-- slider section -->
-    <div class="p-5 sliderContainer relative overflow-hidden mb-5">
-        <div id="sliderImages" class="flex transition-transform duration-500">
-            <img src="./images/slider-one.jpg" alt="slider image" class="w-full flex-shrink-0" />
-            <img src="./images/slider-one.jpg" alt="slider image" class="w-full flex-shrink-0" />
-            <img src="./images/slider-one.jpg" alt="slider image" class="w-full flex-shrink-0" />
-        </div>
-        <div class="sliderContent flex justify-between items-center absolute w-full top-0 bottom-0 m-auto text-white">
-            <button id="prev" class="bg-none border-none cursor-pointer p-10">
-                <i class="fa-solid fa-chevron-left text-7xl"></i>
-            </button>
-            <div class="sliderText">
-                <h1 class="text-7xl font-bold mb-5">Level up your style with our</h1>
-                <p class="text-center text-xl font-bold mb-5">summer collections</p>
-                <button class="text-center block bg-white border border-black p-2 text-black m-auto">
-                    Shop Now
-                    <i class="fa-solid fa-arrow-right"></i>
+    <div class="p-3 md:p-5">
+        <div class="sliderContainer relative overflow-hidden mb-5">
+            <div id="sliderImages" class="flex transition-transform duration-500">
+                <img src="./images/slider-one.jpg" alt="slider image" class="w-full flex-shrink-0" />
+                <img src="./images/slider-one.jpg" alt="slider image" class="w-full flex-shrink-0" />
+                <img src="./images/slider-one.jpg" alt="slider image" class="w-full flex-shrink-0" />
+            </div>
+            <div
+                class="sliderContent flex justify-between items-center absolute w-full inset-0 top-0 bottom-0 m-auto text-white">
+                <button id="prev" class="bg-none border-none cursor-pointer p-3 md:p-8">
+                    <i class="fa-solid fa-chevron-left text-2xl md:text-7xl"></i>
+                </button>
+                <div class="sliderText">
+                    <h1 class="text-xl md:text-7xl font-bold text-center mb-2 md:mb-5">Level up your style with our</h1>
+                    <p class="text-center text-sm md:text-xl font-bold mb-2 md:mb-5">summer collections</p>
+                    <button class="text-center block bg-white border border-black px-2 py-1 md:p-2 text-black m-auto">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <button id="next" class="bg-none border-none cursor-pointer p-3 md:p-8">
+                    <i class="fa-solid fa-chevron-right text-2xl md:text-7xl"></i>
                 </button>
             </div>
-            <button id="next" class="bg-none border-none cursor-pointer p-10">
-                <i class="fa-solid fa-chevron-right text-7xl"></i>
-            </button>
         </div>
     </div>
 
     <!-- Brands section -->
-    <div class="p-5">
+    <div class="p-3 md:p-5">
         <h1 class="text-2xl font-bold">Brands</h1>
-        <div class="flex justify-between items-center">
-            <div class="mt-5">
-                <img src="./images/behance.png" alt="behance" class="w-24" />
-                <p class="text-center text-2xl">Puma</p>
+        <div class="flex items-stretch justify-between mt-5">
+            <div>
+                <img src="./images/behance.png" alt="behance" class="w-6 md:w-24" />
+                <p class="text-center text-xs md:text-2xl">Puma</p>
             </div>
             <div>
-                <img src="./images/adidas.png" alt="behance" class="w-24" />
-                <p class="text-center text-2xl">Adidas</p>
+                <img src="./images/adidas.png" alt="behance" class="w-6 md:w-24" />
+                <p class="text-center text-xs md:text-2xl">Adidas</p>
             </div>
             <div>
-                <img src="./images/simple.png" alt="behance" class="w-24" />
-                <p class="text-center text-2xl">Simple</p>
+                <img src="./images/simple.png" alt="behance" class="w-6 md:w-24" />
+                <p class="text-center text-xs md:text-2xl">Simple</p>
             </div>
             <div>
-                <img src="./images/behance.png" alt="behance" class="w-24" />
-                <p class="text-center text-2xl">Behance</p>
+                <img src="./images/behance.png" alt="behance" class="w-6 md:w-24" />
+                <p class="text-center text-xs md:text-2xl">Behance</p>
             </div>
             <div>
-                <img src="./images/leaves.png" alt="behance" class="w-24" />
-                <p class="text-center text-2xl">Leaves</p>
+                <img src="./images/leaves.png" alt="behance" class="w-6 md:w-24" />
+                <p class="text-center text-xs md:text-2xl">Leaves</p>
             </div>
             <div>
-                <img src="./images/twitch.png" alt="behance" class="w-24" />
-                <p class="text-center text-2xl">Twitch</p>
+                <img src="./images/twitch.png" alt="behance" class="w-6 md:w-24" />
+                <p class="text-center text-xs md:text-2xl">Twitch</p>
             </div>
             <div>
-                <img src="./images/leaves.png" alt="behance" class="w-24" />
-                <p class="text-center text-2xl">Leaves</p>
+                <img src="./images/leaves.png" alt="behance" class="w-6 md:w-24" />
+                <p class="text-center text-xs md:text-2xl">Leaves</p>
             </div>
         </div>
     </div>
 
     <!-- customer satisfaction section -->
-    <div class="p-5 mt-5">
+    <div class="p-3 md:p-5 mt-5">
         <div class="flex justify-between items-center">
-            <h1 class="text-3xl font-bold">We provide Best<br /> Customer Experiences</h1>
-            <h3 class="text-2xl font-medium">|| We ensure that our customer have the best shopping experience</h3>
+            <h1 class="text-xs md:text-3xl font-semibold">We provide Best<br /> Customer Experiences</h1>
+            <h3 class="customer-satisfy-size font-medium">|| We ensure that our customer have the best shopping experience</h3>
         </div>
-        <div class="mt-5 flex justify-around items-center gap-3">
-            <div class="bg-gray-100 p-5">
-                <i class="fa-regular fa-circle-check text-5xl"></i>
-                <h4 class="text-base font-bold mt-2">Original Products</h4>
-                <p class="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt.</p>
+        <div class="mt-5 flex justify-around items-center gap-2 md:gap-3">
+            <div class="bg-gray-100 p-2 md:p-5">
+                <i class="fa-regular fa-circle-check text-lg md:text-5xl"></i>
+                <h4 class="text-xs md:text-base font-bold mt-2">Original Products</h4>
+                <p class="custom-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt.</p>
             </div>
-            <div class="bg-gray-100 p-5">
-                <i class="fa-regular fa-face-smile text-5xl"></i>
-                <h4 class="text-base font-bold mt-2">Satisfaction Guarantee</h4>
-                <p class="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt.</p>
+            <div class="bg-gray-100 p-2 md:p-5">
+                <i class="fa-regular fa-face-smile text-lg md:text-5xl"></i>
+                <h4 class="text-xs md:text-base font-bold mt-2">Satisfaction Guarantee</h4>
+                <p class="custom-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt.</p>
             </div>
-            <div class="bg-gray-100 p-5">
-                <i class="fa-solid fa-broom text-5xl"></i>
-                <h4 class="text-base font-bold mt-2">New Arrival Everyday</h4>
-                <p class="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt.</p>
+            <div class="bg-gray-100 p-2 md:p-5">
+                <i class="fa-solid fa-broom text-lg md:text-5xl"></i>
+                <h4 class="text-xs md:text-base font-bold mt-2">New Arrival Everyday</h4>
+                <p class="custom-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt.</p>
             </div>
-            <div class="bg-gray-100 p-5">
-                <i class="fa-solid fa-truck-fast text-5xl"></i>
-                <h4 class="text-base font-bold mt-2">Fast & Free Shipping</h4>
-                <p class="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt.</p>
+            <div class="bg-gray-100 p-2 md:p-5">
+                <i class="fa-solid fa-truck-fast text-lg md:text-5xl"></i>
+                <h4 class="text-xs md:text-base font-bold mt-2">Fast & Free Shipping</h4>
+                <p class="custom-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt.</p>
             </div>
         </div>
     </div>
 
     <!-- new arrivals section -->
-    <div class="p-5 mt-5" id="new_arrivals" style="scroll-margin-top: 80px;">
+    <div class="p-3 md:p-5 mt-5" id="new_arrivals" style="scroll-margin-top: 80px;">
         <h1 class="text-3xl font-bold">New Arrivals</h1>
-        <div class="mt-5 flex justify-between items-center gap-5">
+        <div class="mt-5 flex justify-between items-center gap-3 md:gap-5">
             <div class="relative">
-                <img src="./images/f1.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f1.jpg" alt="Shirt image" class="w-full md:w-74 h-36 md:h-80 object-cover" />
 
                 <!-- Gray overlay -->
                 <div class="absolute inset-0 bg-black opacity-40"></div>
 
                 <div class="absolute flex justify-center items-center inset-0">
-                    <button class="text-center rounded-md px-4 py-3 bg-gray-300 text-black">
+                    <button class="text-center rounded-md p-2 md:px-4 md:py-3 bg-gray-300 text-black custom-size">
                         Shop Now
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
             <div class="relative">
-                <img src="./images/f2.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f2.jpg" alt="Shirt image" class="w-full md:w-74 h-36 md:h-80 object-cover" />
 
                 <!-- Gray overlay -->
                 <div class="absolute inset-0 bg-black opacity-40"></div>
 
                 <div class="absolute flex justify-center items-center inset-0">
-                    <button class="text-center rounded-md px-4 py-3 bg-gray-300 text-black">
+                    <button class="text-center rounded-md p-2 md:px-4 md:py-3 bg-gray-300 text-black custom-size">
                         Shop Now
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
             <div class="relative">
-                <img src="./images/f3.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f3.jpg" alt="Shirt image" class="w-full md:w-74 h-36 md:h-80 object-cover" />
 
                 <!-- Gray overlay -->
                 <div class="absolute inset-0 bg-black opacity-40"></div>
 
                 <div class="absolute flex justify-center items-center inset-0">
-                    <button class="text-center rounded-md px-4 py-3 bg-gray-300 text-black">
+                    <button class="text-center rounded-md p-2 md:px-4 md:py-3 bg-gray-300 text-black custom-size">
                         Shop Now
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
             <div class="relative">
-                <img src="./images/f4.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f4.jpg" alt="Shirt image" class="w-full md:w-74 h-36 md:h-80 object-cover" />
 
                 <!-- Gray overlay -->
                 <div class="absolute inset-0 bg-black opacity-40"></div>
 
                 <div class="absolute flex justify-center items-center inset-0">
-                    <button class="text-center rounded-md px-4 py-3 bg-gray-300 text-black">
+                    <button class="text-center rounded-md p-2 md:px-4 md:py-3 bg-gray-300 text-black custom-size">
                         Shop Now
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
@@ -222,78 +226,78 @@
     </div>
 
     <!-- most wanted section -->
-    <div class="p-5 mt-5" id="most_wanted" style="scroll-margin-top: 80px;">
+    <div class="p-3 md:p-5 mt-5" id="most_wanted" style="scroll-margin-top: 80px;">
         <h1 class="text-3xl font-bold">Most wanted</h1>
-        <div class="mt-5 flex justify-between items-center gap-5">
+        <div class="mt-5 flex justify-between items-center gap-3 md:gap-5">
             <div class="relative">
-                <img src="./images/f6.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f6.jpg" alt="Shirt image" class="w-full md:w-74 h-32 md:h-80 object-cover" />
 
-                <div class="absolute bg-red-600 px-7 py-3 rounded-md text-white top-0 text-xl font-semibold">Sale</div>
+                <div class="absolute bg-red-600 p-2 md:px-7 md:py-3 rounded-md text-white top-0 text-xs md:text-xl font-semibold">Sale</div>
 
                 <div class="absolute flex justify-end items-end inset-0">
-                    <img src="./images/blackheart.png" alt="black heart" class="w-10 m-5 cursor-pointer blackHeart"
+                    <img src="./images/blackheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer blackHeart"
                         onclick="toggleHeart(this)">
-                    <img src="./images/redheart.png" alt="black heart" class="w-10 m-5 cursor-pointer hidden redHeart"
+                    <img src="./images/redheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer hidden redHeart"
                         onclick="toggleHeart(this)">
                 </div>
             </div>
             <div class="relative">
-                <img src="./images/f3.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f3.jpg" alt="Shirt image" class="w-full md:w-74 h-32 md:h-80 object-cover" />
 
-                <div class="absolute bg-red-600 px-7 py-3 rounded-md text-white top-0 text-xl font-semibold">Sale</div>
+                <div class="absolute bg-red-600 p-2 md:px-7 md:py-3 rounded-md text-white top-0 text-xs md:text-xl font-semibold">Sale</div>
 
                 <div class="absolute flex justify-end items-end inset-0">
-                    <img src="./images/blackheart.png" alt="black heart" class="w-10 m-5 cursor-pointer blackHeart"
+                    <img src="./images/blackheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer blackHeart"
                         onclick="toggleHeart(this)">
-                    <img src="./images/redheart.png" alt="black heart" class="w-10 m-5 cursor-pointer hidden redHeart"
+                    <img src="./images/redheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer hidden redHeart"
                         onclick="toggleHeart(this)">
                 </div>
             </div>
             <div class="relative">
-                <img src="./images/f5.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f5.jpg" alt="Shirt image" class="w-full md:w-74 h-32 md:h-80 object-cover" />
 
-                <div class="absolute bg-red-600 px-7 py-3 rounded-md text-white top-0 text-xl font-semibold">Sale</div>
+                <div class="absolute bg-red-600 p-2 md:px-7 md:py-3 rounded-md text-white top-0 text-xs md:text-xl font-semibold">Sale</div>
 
                 <div class="absolute flex justify-end items-end inset-0">
-                    <img src="./images/blackheart.png" alt="black heart" class="w-10 m-5 cursor-pointer blackHeart"
+                    <img src="./images/blackheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer blackHeart"
                         onclick="toggleHeart(this)">
-                    <img src="./images/redheart.png" alt="black heart" class="w-10 m-5 cursor-pointer hidden redHeart"
+                    <img src="./images/redheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer hidden redHeart"
                         onclick="toggleHeart(this)">
                 </div>
             </div>
             <div class="relative">
-                <img src="./images/f4.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f4.jpg" alt="Shirt image" class="w-full md:w-74 h-32 md:h-80 object-cover" />
 
-                <div class="absolute bg-red-600 px-7 py-3 rounded-md text-white top-0 text-xl font-semibold">Sale</div>
+                <div class="absolute bg-red-600 p-2 md:px-7 md:py-3 rounded-md text-white top-0 text-xs md:text-xl font-semibold">Sale</div>
 
                 <div class="absolute flex justify-end items-end inset-0">
-                    <img src="./images/blackheart.png" alt="black heart" class="w-10 m-5 cursor-pointer blackHeart"
+                    <img src="./images/blackheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer blackHeart"
                         onclick="toggleHeart(this)">
-                    <img src="./images/redheart.png" alt="black heart" class="w-10 m-5 cursor-pointer hidden redHeart"
+                    <img src="./images/redheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer hidden redHeart"
                         onclick="toggleHeart(this)">
                 </div>
             </div>
             <div class="relative">
-                <img src="./images/f2.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f2.jpg" alt="Shirt image" class="w-full md:w-74 h-32 md:h-80 object-cover" />
 
-                <div class="absolute bg-red-600 px-7 py-3 rounded-md text-white top-0 text-xl font-semibold">Sale</div>
+                <div class="absolute bg-red-600 p-2 md:px-7 md:py-3 rounded-md text-white top-0 text-xs md:text-xl font-semibold">Sale</div>
 
                 <div class="absolute flex justify-end items-end inset-0">
-                    <img src="./images/blackheart.png" alt="black heart" class="w-10 m-5 cursor-pointer blackHeart"
+                    <img src="./images/blackheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer blackHeart"
                         onclick="toggleHeart(this)">
-                    <img src="./images/redheart.png" alt="black heart" class="w-10 m-5 cursor-pointer hidden redHeart"
+                    <img src="./images/redheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer hidden redHeart"
                         onclick="toggleHeart(this)">
                 </div>
             </div>
             <div class="relative">
-                <img src="./images/f1.jpg" alt="Shirt image" class="w-72" />
+                <img src="./images/f1.jpg" alt="Shirt image" class="w-full md:w-74 h-32 md:h-80 object-cover" />
 
-                <div class="absolute bg-red-600 px-7 py-3 rounded-md text-white top-0 text-xl font-semibold">Sale</div>
+                <div class="absolute bg-red-600 p-2 md:px-7 md:py-3 rounded-md text-white top-0 text-xs md:text-xl font-semibold">Sale</div>
 
                 <div class="absolute flex justify-end items-end inset-0">
-                    <img src="./images/blackheart.png" alt="black heart" class="w-10 m-5 cursor-pointer blackHeart"
+                    <img src="./images/blackheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer blackHeart"
                         onclick="toggleHeart(this)">
-                    <img src="./images/redheart.png" alt="black heart" class="w-10 m-5 cursor-pointer hidden redHeart"
+                    <img src="./images/redheart.png" alt="black heart" class="w-6 md:w-10 m-5 cursor-pointer hidden redHeart"
                         onclick="toggleHeart(this)">
                 </div>
             </div>
@@ -301,12 +305,12 @@
     </div>
 
     <!-- offer banner section  -->
-    <div class="p-5 mt-5 flex justify-around items-center" style="background-color: #1D232C;">
-        <img src="./images/offer.jpg" alt="offer" />
+    <div class="m-3 md:m-5 p-2 md:p-5 flex justify-around items-center gap-2 lg:gap-0" style="background-color: #1D232C;">
+        <img src="./images/offer.jpg" alt="offer" class="w-52 md:w-auto" />
         <div class="text-white text-left" style="width: 55%;">
-            <h1 class="text-5xl font-bold mb-3">Limited Offer</h1>
-            <h3 class="text-2xl font-bold mb-3">35% OFF on this for the first 30 customers</h3>
-            <button class="text-center rounded-md px-5 py-3 bg-gray-300 text-black text-lg">
+            <h1 class="text-sm md:text-5xl font-bold mb-1 md:mb-3">Limited Offer</h1>
+            <h3 class="text-xs md:text-2xl font-bold mb-1 md:mb-3">35% OFF on this for the first 30 customers</h3>
+            <button class="text-center rounded-md px-2 py-0 md:p-2 md:px-5 md:py-3 bg-gray-300 text-black text-lg custom-size">
                 Shop Now
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -314,12 +318,12 @@
     </div>
 
     <!-- newsletter section -->
-    <div class="p-5 mt-16 text-center">
-        <h1 class="text-5xl font-bold mb-5">Join our News Letter</h1>
-        <h3 class="text-3xl font-normal mb-5">Signup for our email newspaper to get exclusive discounts, updates, and
+    <div class="p-3 md:p-5 mt-8 md:mt-16 text-center">
+        <h1 class="text-2xl md:text-5xl font-bold mb-2 md:mb-5">Join our News Letter</h1>
+        <h3 class="text-xs md:text-3xl font-normal mb-2 md:mb-5">Signup for our email newspaper to get exclusive discounts, updates, and
             more</h3>
-        <input type="text" class="block border-2 border-black mb-5 w-3/4 m-auto p-2" />
-        <button class="text-center rounded-md px-5 py-3 bg-gray-900 text-white text-lg">
+        <input type="text" class="block border-2 border-black mb-5 w-full md:w-3/4 m-auto p-2" />
+        <button class="text-center rounded-md px-5 py-3 bg-gray-900 text-white text-lg custom-size">
             Subscribe
             <i class="fa-solid fa-arrow-right"></i>
         </button>
@@ -327,15 +331,15 @@
 
     <!-- footer section -->
     <div class="p-10 mt-15 text-white" style="background-color: #1D232C;">
-        <h1 class="text-5xl font-bold mb-5">Nostra</h1>
-        <h4 class="text-3xl font-normal mb-10">The Standard chunk of Lorem ipsum used since the 1500s is reprodused
+        <h1 class="text-2xl md:text-5xl font-bold mb-5 md:mb-5">Nostra</h1>
+        <h4 class="text-base md:text-3xl font-normal mb-5 md:mb-10">The Standard chunk of Lorem ipsum used since the 1500s is reprodused
             below for those interest</h4>
         <div class="flex justify-start gap-20 mb-10 pl-10">
-            <i class="icon fa-brands fa-instagram text-3xl"></i>
-            <i class="icon fa-brands fa-twitter text-3xl"></i>
-            <i class="icon fa-brands fa-facebook text-3xl"></i>
+            <i class="icon fa-brands fa-instagram text-lg md:text-3xl"></i>
+            <i class="icon fa-brands fa-twitter text-lg md:text-3xl"></i>
+            <i class="icon fa-brands fa-facebook text-lg md:text-3xl"></i>
         </div>
-        <h4 class="text-3xl font-normal mb-10">@2026 Nostra.com</h4>
+        <h4 class="text-base md:text-3xl font-normal mb-10">@2026 Nostra.com</h4>
     </div>
 
     <script src="./index.js"></script>

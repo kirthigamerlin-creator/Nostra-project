@@ -1,0 +1,15 @@
+.custom-size, .customer-satisfy-size {
+    font-size: 8px;
+}
+.custom-small-size {
+    font-size: 6px;
+}
+
+@media (min-width: 768px) {
+    .custom-size {
+        font-size: 1rem;
+    }
+    .customer-satisfy-size {
+        font-size: 1.5rem;
+    }
+}
