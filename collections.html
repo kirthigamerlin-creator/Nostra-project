@@ -73,15 +73,15 @@
             <div class="mb-5">
                 <h1 class="text-3xl font-bold mb-5">Occassion</h1>
                 <div class="mb-2">
-                    <input type="checkbox" name="occassion" id="summer" value="summer">
+                    <input type="checkbox" name="occassions" id="summer" value="summer">
                     <label for="summer" class="text-2xl">Summer</label>
                 </div>
                 <div class="mb-2">
-                    <input type="checkbox" name="occassion" id="party" value="party">
+                    <input type="checkbox" name="occassions" id="party" value="party">
                     <label for="party" class="text-2xl">Party</label>
                 </div>
                 <div class="mb-2">
-                    <input type="checkbox" name="occassion" id="beach" value="beach">
+                    <input type="checkbox" name="occassions" id="beach" value="beach">
                     <label for="beach" class="text-2xl">Beach</label>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                     <label for="new" class="text-2xl">New</label>
                 </div>
                 <div class="mb-2">
-                    <input type="checkbox" name="arrivals" id="new" value="old">
+                    <input type="checkbox" name="arrivals" id="old" value="old">
                     <label for="old" class="text-2xl">Old</label>
                 </div>
             </div>
@@ -122,54 +122,55 @@
         <!-- search section -->
         <div class="border-l-2 border-black pl-5 w-full">
             <div class="flex items-center mb-10">
-                <input type="text" placeholder="Search" class="w-11/12 border-2 border-black p-2 rounded-lg" />
+                <input type="text" id="search" placeholder="Search" class="w-11/12 border-2 border-black p-2 rounded-lg" />
                 <i class="fa-solid fa-magnifying-glass text-lg -ml-8"></i>
             </div>
-            <div class="grid grid-cols-3 gap-8">
-                <div >
+            <div class="grid grid-cols-3 gap-8" id="collectionsContainer">
+                <div data-occassion="summer" data-color="blue" data-arrival="new">
                     <img src="./images/f1.jpg" alt="shirt image"  class="w-80" />
                     <h2 class="text-3xl font-bold">Floral Summer Shirt</h2>
                     <p class="text-lg font-semibold">&#8377;220</p>
                 </div>
-                <div >
+                <div data-occassion="summer" data-color="green" data-arrival="new">
                     <img src="./images/s2.jpg" alt="shirt image"  class="w-80" />
                     <h2 class="text-3xl font-bold">Summer Green</h2>
                     <p class="text-lg font-semibold">&#8377;260</p>
                 </div>
-                <div >
+                <div data-occassion="party" data-color="red" data-arrival="new">
                     <img src="./images/s3.jpg" alt="shirt image"  class="w-80" />
                     <h2 class="text-3xl font-bold">Party Floral Shirt</h2>
                     <p class="text-lg font-semibold">&#8377;399</p>
                 </div>
-                <div >
+                <div data-occassion="summer" data-color="red" data-arrival="new">
                     <img src="./images/s4.jpg" alt="shirt image"  class="w-80" />
                     <h2 class="text-3xl font-bold">Floral Summer Shirt</h2>
                     <p class="text-lg font-semibold">&#8377;399</p>
                 </div>
-                <div >
+                <div data-occassion="beach" data-color="blue" data-arrival="new">
                     <img src="./images/s5.jpg" alt="shirt image"  class="w-80" />
                     <h2 class="text-3xl font-bold">Beach Shirt</h2>
                     <p class="text-lg font-semibold">&#8377;579</p>
                 </div>
-                <div >
+                <div data-occassion="party" data-color="white" data-arrival="old">
                     <img src="./images/s6.jpg" alt="shirt image"  class="w-80" />
                     <h2 class="text-3xl font-bold">Shirt Party Red</h2>
                     <p class="text-lg font-semibold">&#8377;579</p>
                 </div>
-                <div >
+                <div data-occassion="party" data-color="red" data-arrival="new">
                     <img src="./images/s3.jpg" alt="shirt image"  class="w-80" />
                     <h2 class="text-3xl font-bold">Party Floral Shirt</h2>
                     <p class="text-lg font-semibold">&#8377;399</p>
                 </div>
-                <div >
+                <div data-occassion="party" data-color="white" data-arrival="old">
                     <img src="./images/s6.jpg" alt="shirt image"  class="w-80" />
                     <h2 class="text-3xl font-bold">Shirt Party Red</h2>
                     <p class="text-lg font-semibold">&#8377;579</p>
                 </div>
-                <div >
+                <div data-occassion="summer" data-color="blue" data-arrival="new">
                     <img src="./images/f1.jpg" alt="shirt image"  class="w-80" />
                     <h2 class="text-3xl font-bold">Floral Summer Shirt</h2>
                     <p class="text-lg font-semibold">&#8377;220</p>
+                    <p class="hidden">blue - new</p>
                 </div>
             </div>
         </div>
